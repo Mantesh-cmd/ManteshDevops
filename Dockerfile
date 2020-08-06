@@ -1,7 +1,7 @@
 FROM devopsedu/webapp
 
-CMD apachectl -D FOREGROUND
+ADD website /var/www/html
 
-RUN rm var/www/html/index.html
+RUN rm /var/www/html/index.html
 
-ADD php /var/www/html/
+CMD apachectl -D FOREGROUN
